@@ -3,7 +3,7 @@
 /**
  * Project Name : Unique Random Number Generator'
  * 
- * File Name : UniqueRNG
+ * File Name : UniqueRandomNumberGenerator
  * 
  * Creator : Hanbing Wang
  * 
