@@ -40,7 +40,7 @@ namespace UniqueRandomNumberGenerator
             if (size <= 0) return;
             if (min > max) return;
 
-            //Use HashSet to make sure the generated random numbers is unuque
+            //Use HashSet to make sure the generated random numbers are unuque
             HashSet<int> uniqueNumbers = new HashSet<int>();
             Random randomNumber = new Random();
             ArrayList res = new ArrayList();
