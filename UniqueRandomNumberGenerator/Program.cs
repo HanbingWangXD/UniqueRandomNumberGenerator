@@ -26,8 +26,8 @@ namespace UniqueRandomNumberGenerator
         {
 
             Console.WriteLine("A program that generates a list of 10,000 numbers in " +
-                "random order each time it is run. Each number in the list must be uniqu" +
-                "e and be between 1 and 10,000 (inclusive).");
+                "random order each time it is run. Each number in the list must be unique" +
+                " and be between 1 and 10,000 (inclusive).");
             GenerateNumbers(10000, 1, 10000);
             Console.ReadKey();
         }
@@ -37,8 +37,7 @@ namespace UniqueRandomNumberGenerator
         public static void GenerateNumbers(int size, int min, int max)
         {
             //Handle illegal inputs
-            if (size <= 0) return;
-            if (min > max) return;
+            if (size <= 0 || min > max || size >= (max - min)) return;
 
             //Use HashSet to make sure the generated random numbers are unuque
             HashSet<int> uniqueNumbers = new HashSet<int>();
